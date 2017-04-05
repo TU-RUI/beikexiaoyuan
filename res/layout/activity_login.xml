@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<LinearLayout
+		android:id="@+id/L1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" >
+
+		<View
+			android:id="@+id/bgcolor1"
+			android:layout_width="match_parent"
+			android:layout_height="150dp"
+			android:background="#7fdadb" />
+
+		<View
+			android:id="@+id/bgcolor2"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent"
+			android:background="#efe8cb" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/L2"
+		android:layout_width="200dp"
+		android:layout_height="80.5dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="110dp"
+		android:alpha="0.5"
+		android:background="#e0ffffff"
+		android:orientation="vertical" >
+
+		<EditText
+			android:id="@+id/number"
+			android:layout_width="160dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center_horizontal"
+			android:background="#e0ffffff"
+			android:hint="请输入账号" />
+
+		<View
+			android:id="@+id/line1"
+			android:layout_width="160dp"
+			android:layout_height="0.5dp"
+			android:layout_gravity="center_horizontal"
+			android:background="#FF909090" />
+
+		<EditText
+			android:id="@+id/password"
+			android:layout_width="160dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center_horizontal"
+			android:background="#e0ffffff"
+			android:hint="请输入密码"
+			android:inputType="textPassword" />
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/post"
+		android:layout_width="100dp"
+		android:layout_height="40dp"
+		android:layout_below="@id/L2"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="40dp"
+		android:background="@drawable/loginbtn"
+		android:text="登录"
+		android:textColor="#ffffff"
+		android:textSize="30dp"
+		android:textStyle="bold" />
+
+	<TextView
+		android:layout_width="257dp"
+		android:layout_height="60dp"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="30dp"
+		android:gravity="center"
+		android:text="LOGIN"
+		android:textSize="40sp" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:text="用 户 名：您的工号、学号或别名\n缺省密码：您身份证号码的后6位" />
+
+</RelativeLayout>

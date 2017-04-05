@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/xiaofeijilu"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical" >
+
+			<TableLayout
+				android:id="@+id/tablelayout1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:shrinkColumns="*"
+				android:stretchColumns="*" >
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="刷卡记录"
+					android:textColor="@color/blue"
+					android:textSize="20sp" />
+
+				<View
+					android:layout_width="wrap_content"
+					android:layout_height="0.5dp"
+					android:background="@color/red" />
+
+				<TableRow android:layout_margin="0.5dp" >
+
+					<TextView
+						android:text="日期"
+						android:textSize="15sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:text="地点"
+						android:textSize="15sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:text="金额"
+						android:textSize="15sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:text="当时余额"
+						android:textSize="15sp"
+						android:textStyle="bold" />
+				</TableRow>
+			</TableLayout>
+
+			<TableLayout
+				android:id="@+id/tablelayout2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:orientation="horizontal"
+				android:shrinkColumns="1"
+				android:stretchColumns="*" >
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="网费信息"
+					android:textColor="@color/blue"
+					android:textSize="20sp" />
+
+				<View
+					android:layout_width="wrap_content"
+					android:layout_height="0.5dp"
+					android:background="@color/red" />
+			</TableLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

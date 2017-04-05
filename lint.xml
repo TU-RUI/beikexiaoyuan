@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="Recycle">
+        <ignore path="src/com/example/myappdemo/ViewOverride/PagerEnabledSlidingPaneLayout.java" />
+    </issue>
+    <issue id="ResourceAsColor">
+        <ignore path="src/com/example/myappdemo/Activity/MainActivity.java" />
+    </issue>
+</lint>
